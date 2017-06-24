@@ -1,11 +1,10 @@
-// @ts-check
 const Telegram = require('telegram-node-bot');
 const request = require('request');
 const moment = require('moment');
+const token = require('./token').token;
 
 const TelegramBaseController = Telegram.TelegramBaseController;
 const TextCommand = Telegram.TextCommand;
-const token = '<paste the token here>';
 const tg = new Telegram.Telegram(token, {});
 
 const mdlaUrl = 'https://script.google.com/macros/s/AKfycbxpEvdoj09IZ3vWsBKKxcL1BAxDb0alUjcpVkHiYuDCRG6Q6Q8/exec';
