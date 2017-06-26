@@ -176,7 +176,7 @@ class MsgController extends TelegramBaseController {
    * @param {Scope} $
    */
   lastVisit($) {
-    $.sendMessage('pobieram, czekaj...');
+    $.sendChatAction('typing');
     requestData($, getLast);
   }
 
